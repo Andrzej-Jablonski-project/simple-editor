@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap&subset=latin-ext");
 html {
   line-height: 1.15;
   /* 1 */
@@ -318,9 +319,12 @@ html {
           box-sizing: inherit; }
 
 body {
-  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: #F9C802;
-  background: #2D2241; }
+  background: #2D2241;
+  font-family: 'Open Sans', sans-serif; }
 
 .editor {
   display: -webkit-box;
@@ -335,38 +339,62 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  min-width: 280px;
-  max-width: 928px;
-  height: 100%;
-  padding: 16px; }
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  max-width: 800px;
+  padding: 0 16px;
+  margin: 0 auto; }
   .editor__header {
+    margin: 16px auto;
     font-weight: 600; }
+  .editor__status {
+    width: 100%;
+    margin: 0 0 16px 0;
+    font-size: 1rem;
+    text-align: center; }
+    @media (min-width: 568px) and (orientation: landscape) {
+      .editor__status {
+        font-size: 1.2rem; } }
   .editor__text {
     width: 100%;
     border-radius: 10px;
-    padding: 10px; }
-    @media (min-width: 320px) and (orientation: landscape) {
+    padding: 8px;
+    margin: 8px; }
+    @media (min-width: 568px) and (orientation: landscape) {
       .editor__text {
-        height: 90px; } }
+        height: 40vh; } }
   .editor__button {
     width: 100%;
-    height: 48px; }
-    @media (min-width: 320px) and (orientation: landscape) {
+    height: 48px;
+    margin: 8px; }
+    @media (min-width: 568px) and (orientation: landscape) {
       .editor__button {
-        width: 30px;
-        -webkit-box-flex: 1;
-            -ms-flex-positive: 1;
-                flex-grow: 1; } }
+        width: 29%; } }
+    @media (min-width: 640px) and (orientation: landscape) {
+      .editor__button {
+        width: 30%; } }
+    @media (min-width: 812px) and (orientation: landscape) {
+      .editor__button {
+        width: 31%; } }
   @media (min-width: 320px) and (orientation: landscape) {
     .editor {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; } }
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin: 0 30px; } }
+  @media (min-width: 640px) and (orientation: landscape) {
+    .editor {
+      margin: 0 30px; } }
+  @media (min-width: 640px) and (orientation: landscape) {
+    .editor {
+      margin: 0 auto; } }
 
 /*# sourceMappingURL=main.css.map */
