@@ -1,11 +1,20 @@
-const path = require('path');
-const outputDir = path.resolve(__dirname, 'dist/js/');
 module.exports = {
-    devtool: 'eval-source-map',
-    entry: path.resolve(__dirname, 'src/js/main.js'),
-    mode: 'production',
-    output: {
-        path: outputDir,
-        filename: 'main.js'
-    }
+  output: {
+    filename: 'main.js',
+  },
+  mode: 'production',
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /(node_modules)/,
+        loader: 'babel-loader',
+        query: {
+          presets: [
+            ['@babel/preset-env', { modules: false }],
+          ],
+        },
+      },
+    ],
+  },
 };
