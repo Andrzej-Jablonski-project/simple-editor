@@ -42,7 +42,8 @@
     "webpack-stream": "^5.2.1"
   },
   "browserslist": [
-    "> 5%", "last 4 versions"
+    "> 5%",
+    "last 4 versions"
   ],
   "babel": {
     "presets": [

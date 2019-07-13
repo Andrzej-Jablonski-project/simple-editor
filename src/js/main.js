@@ -2,7 +2,7 @@
 
 const textArea = document.querySelector('.editor__text');
 const button = document.querySelectorAll('.editor__button--js');
-const info = document.querySelector('.status');
+const info = document.querySelector('.editor__status');
 
 
 button[0].addEventListener('click', () => {
