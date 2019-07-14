@@ -1,5 +1,5 @@
-![simple editor](gh/screenshot.png)
 # Simple editor
+![simple editor](gh/screenshot.png)
 ## Opis projektu
 Prosty edytor którym możemy zapisać, odczytać oraz skasować dane z localStorage.
 ## Technologie
