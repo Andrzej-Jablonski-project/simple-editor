@@ -9,8 +9,8 @@ Prosty edytor którym możemy zapisać, odczytać oraz skasować dane z localSto
 ### Efekt przycisku "Clean"
 Efekt zniekształcania przycisku uzyskałem stosując filtr SVG. Stan filtra modyfikowany jest JavaScriptem.
 #### Projekt z kórego czerpałem inspiracje oraz kod
-[DistortedButtonEffects](https://tympanus.net/codrops/2016/05/11/distorted-button-effects-with-svg-filters/)
-[GitHub](https://github.com/codrops/DistortedButtonEffects/)
+1. [DistortedButtonEffects](https://tympanus.net/codrops/2016/05/11/distorted-button-effects-with-svg-filters/)
+2 .[GitHub](https://github.com/codrops/DistortedButtonEffects/)
 ## Metodologie użyte w projekcie
 - BEM
 - SASS (składnia SCSS)
