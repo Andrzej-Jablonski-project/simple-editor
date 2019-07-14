@@ -1,7 +1,7 @@
 # Simple editor
 ![simple editor](gh/screenshot.png)
 ## Opis projektu
-Prosty edytor którym możemy zapisać, odczytać oraz skasować dane z localStorage.
+Prosty edytor, którym możemy zapisać, odczytać oraz skasować dane z localStorage.
 ## Technologie
 - HTML5
 - CSS
@@ -31,7 +31,7 @@ Efekt zniekształcania przycisku uzyskałem stosując filtr SVG. Stan filtra mod
 
 `gulp`
 
-Publikacja strony na github pages `npm run deploy`
+Publikacja edytora na github pages `npm run deploy`
 
 [Simple editor](https://andrzej-jablonski-project.github.io/simple-editor/)
 
