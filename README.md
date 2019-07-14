@@ -31,7 +31,7 @@ Efekt zniekształcania przycisku uzyskałem stosując filtr SVG. Stan filtra mod
 
 `gulp`
 
-Publikacja strony na github pages `npm run deploy`
+Publikacja edytora na github pages `npm run deploy`
 
 [Simple editor](https://andrzej-jablonski-project.github.io/simple-editor/)
 
