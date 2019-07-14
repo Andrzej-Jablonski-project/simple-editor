@@ -323,7 +323,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   color: #F9C802;
-  background: #2D2241;
+  background: #2A5966;
   font-family: 'Open Sans', sans-serif; }
 
 .editor {
@@ -364,13 +364,35 @@ body {
     border-radius: 10px;
     padding: 8px;
     margin: 8px; }
+    .editor__text:focus {
+      outline: none;
+      -webkit-box-shadow: 0px 0px 4px #ffc400;
+              box-shadow: 0px 0px 4px #ffc400; }
     @media (min-width: 568px) and (orientation: landscape) {
       .editor__text {
         height: 40vh; } }
   .editor__button {
     width: 100%;
     height: 48px;
-    margin: 8px; }
+    margin: 8px;
+    background-color: #222;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white; }
+    .editor__button:hover {
+      background-color: #2CD892;
+      color: #fff; }
+    .editor__button:focus {
+      outline: none;
+      color: #fff;
+      -webkit-box-shadow: 0px 0px 4px #ffc400;
+              box-shadow: 0px 0px 4px #ffc400; }
+    .editor__button--filter {
+      -webkit-filter: url("#filter");
+      filter: url("#filter"); }
+      .editor__button--filter:hover {
+        background-color: #D13E36; }
     @media (min-width: 568px) and (orientation: landscape) {
       .editor__button {
         width: 29%; } }
@@ -396,5 +418,11 @@ body {
   @media (min-width: 640px) and (orientation: landscape) {
     .editor {
       margin: 0 auto; } }
+
+.svg-filters {
+  position: absolute;
+  visibility: hidden;
+  width: 1px;
+  height: 1px; }
 
 /*# sourceMappingURL=main.css.map */
