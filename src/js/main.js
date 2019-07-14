@@ -53,7 +53,7 @@ const turbVal = {
 const turb = document.querySelectorAll('#filter feTurbulence')[0];
 const btTl = new TimelineLite({
     paused: true,
-    onUpdate: function () {
+    onUpdate: () => {
         turb.setAttribute('baseFrequency', '0 ' + turbVal.val);
     }
 });
@@ -65,6 +65,6 @@ btTl.to(turbVal, 0.2, {
     val: 0.000001
 });
 
-button[2].addEventListener('click', function () {
+button[2].addEventListener('click', () => {
     btTl.restart();
 });
