@@ -1,7 +1,7 @@
 # Simple editor
 ![simple editor](gh/screenshot.png)
 ## Opis projektu
-Prosty edytor którym możemy zapisać, odczytać oraz skasować dane z localStorage.
+Prosty edytor, którym możemy zapisać, odczytać oraz skasować dane z localStorage.
 ## Technologie
 - HTML5
 - CSS
