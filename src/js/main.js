@@ -30,6 +30,7 @@ button[1].addEventListener('click', () => {
 
     } else {
         localStorage.setItem('editor', textArea.value);
+        textArea.value = '';
         info.textContent = `Data saved.`;
         info.style.color = 'green';
     }
@@ -41,7 +42,6 @@ button[2].addEventListener('click', () => {
         info.style.color = yellow;
     } else {
         localStorage.removeItem('editor');
-        textArea.value = '';
         info.textContent = `Data cleared.`;
         info.style.color = 'green';
     }
