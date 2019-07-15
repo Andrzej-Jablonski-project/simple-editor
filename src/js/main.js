@@ -3,16 +3,16 @@
 const textArea = document.querySelector('.editor__text');
 const button = document.querySelectorAll('.editor__button--js');
 const info = document.querySelector('.editor__status');
-const yellow = '#F9C802';
+const bisque = '#D13E36';
 
 button[0].addEventListener('click', () => {
     const data = localStorage.getItem('editor');
     if (textArea.value) {
         info.textContent = `Data already exists in the text field.`;
-        info.style.color = yellow;
+        info.style.color = bisque;
     } else if (!data) {
         info.textContent = `There are no data to load.`;
-        info.style.color = yellow;
+        info.style.color = bisque;
     } else {
         textArea.value = localStorage.getItem('editor');
         info.textContent = 'Loaded data.';
@@ -23,10 +23,10 @@ button[1].addEventListener('click', () => {
     const data = localStorage.getItem('editor');
     if (!textArea.value) {
         info.textContent = `There is no data to write.`;
-        info.style.color = yellow;
+        info.style.color = bisque;
     } else if (data) {
         info.textContent = `Data exists, delete data first.`;
-        info.style.color = yellow;
+        info.style.color = bisque;
 
     } else {
         localStorage.setItem('editor', textArea.value);
@@ -39,7 +39,7 @@ button[2].addEventListener('click', () => {
     const data = localStorage.getItem('editor');
     if (!data) {
         info.textContent = `No data to clean.`;
-        info.style.color = yellow;
+        info.style.color = bisque;
     } else {
         localStorage.removeItem('editor');
         info.textContent = `Data cleared.`;
